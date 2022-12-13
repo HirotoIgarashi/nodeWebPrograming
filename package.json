@@ -1,0 +1,19 @@
+{
+  "name": "nodewebapplication",
+  "version": "1.0.0",
+  "description": "## Node.js実行環境のインスール",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HirotoIgarashi/nodeWebPrograming.git"
+  },
+  "author": "Hiroto Igarashi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HirotoIgarashi/nodeWebPrograming/issues"
+  },
+  "homepage": "https://github.com/HirotoIgarashi/nodeWebPrograming#readme"
+}
