@@ -1,5 +1,5 @@
 #node_modulesは不要
-/node_modules/
+nodeWebPrograming/node_modules/
 
 # package-lock.jsonは不要
 package-lock.json
