@@ -1,5 +1,10 @@
-const port = 3000;
+'use strict';
+
+// 待ち受けるポートを8000にする
+const port = 8000;
+// expressのモジュールをロードする
 const express = require("express");
+// expressアプリケーションを定数appに代入する
 const app = express();
 
 app.get("/", (req, res) => {
