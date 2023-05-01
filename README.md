@@ -10,9 +10,31 @@ Node.js の特徴とそれまでの技術との違い、および ECMAScript 標
 
 ## Node.js の実行環境のインストール
 
-## パッケージ管理ツールの npm について
+### Linux
+
+#### Linux mint
+
+### バージョンマネージャの利用
+
+バージョンマネージャは[nvm]を使用します。
+
+[nvm]: https://github.com/nvm-sh/nvm
+
+#### nvm について
+
+## Node.js のパッケージ管理ツールの npm について
 
 ## ユニットテストとデバッグ
+
+### ユニットテストツールの分類
+
+### Mocha + Chai + SinonJS + Istanbul
+
+### Jest
+
+### デバッグ
+
+### まとめ
 
 ## 非同期プログラミング
 
