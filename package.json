@@ -2,7 +2,12 @@
   "name": "nodeWebPrograming",
   "packageManager": "yarn@3.5.0",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "marked": "^5.1.0",
+    "marked-gfm-heading-id": "^3.0.4",
+    "marked-highlight": "^2.0.1",
+    "marked-mangle": "^1.1.0",
+    "pygmentize-bundled": "^2.3.0"
   },
   "scripts": {
     "start": "node app",
@@ -10,5 +15,6 @@
   },
   "devDependencies": {
     "mocha": "^10.2.0"
-  }
+  },
+  "type": "module"
 }

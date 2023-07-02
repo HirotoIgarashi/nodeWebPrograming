@@ -2,8 +2,14 @@
 
 import { marked } from "marked";
 
-export function md2html(markdown, clipOptions) {
+// Warning回避
+marked.use({
+  mangle: false,
+  headerIds: false
+});
+
+export function md2html(markdown, cliOptions) {
   return marked.parse(markdown, {
-    gfm: clipOptions.gfm
+    gfm: cliOptions.gfm
   })
 };
