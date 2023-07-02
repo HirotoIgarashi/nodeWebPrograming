@@ -19,7 +19,7 @@ Node.js の特徴とそれまでの技術との違い、および ECMAScript 標
 
 [nvm]: https://github.com/nvm-sh/nvm
 
-#### nvm について
+#### 3.1.1 nvm について
 
 ## 3章 Node.js のパッケージ管理ツールの npm について
 
