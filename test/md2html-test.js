@@ -15,9 +15,7 @@ it("converts Markdown to HTML (GFM=false)", async() => {
   // 末尾の改行の有無の違いを無視するため、変換後のHTMLのスペースを
   // trimメソッドで削除してから比較しています
   assert.strictEqual(md2html(
-    sample,
-    { gfm: false }).trimEnd(),
-    expected.trimEnd()
+    sample, { gfm: false }).trimEnd(), expected.trimEnd()
   );
 });
 
