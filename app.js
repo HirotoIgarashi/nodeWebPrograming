@@ -14,7 +14,7 @@ const todos = [
   { id: 2, title: '下書き', completed: true }
 ];
 
-// 待ち受けるポートを8000にする
+// 待ち受けるポートを3000にする
 const port = 3000;
 
 // /api/todosに対するGETリクエストを処理するハンドラ
