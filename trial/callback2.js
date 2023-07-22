@@ -13,15 +13,24 @@ const consoleLogStart = (text, callback) => {
   }, 1000);
 };
 
+const consoleLogEnd = (text) => {
+  return console.log(`${text} end`);
+};
+
+// const consoleLogEnd = (text) => {
+//   console.log(`${text} end`);
+// };
+
 // 関数の実行
+
 consoleLogStart('process A', () => {
-  console.log('process A end');
+  consoleLogEnd('process A');
 });
 
 consoleLogStart('process B', () => {
-  console.log('process B end');
+  consoleLogEnd('process B');
 });
 
 consoleLogStart('process C', () => {
-  console.log('process C end');
+  consoleLogEnd('process C');
 });
