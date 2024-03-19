@@ -29,7 +29,9 @@ app.get('/api/todos', (req, res) => {
   }
   // completedクエリパラメータを指定された場合はToDoをフィルタリング
   const completed = req.query.completed === 'true';
-  res.json(todos.filter(todo => todo.completed === completed));
+  res.json(todos.filter(
+    todo => todo.completed === completed
+  ));
 });
 app.get('/', (req, res) => res.send("Hello, Universe!"))
 .listen(
