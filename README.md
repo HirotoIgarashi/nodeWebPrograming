@@ -1,6 +1,6 @@
 # Node.js 入門
 
-## 1章 イントロダクション
+## 1章 Node.jsの紹介
 
 Node.js の特徴とそれまでの技術との違い、および ECMAScript 標準、Web 標準との
 関係について説明します。また、Node.js の実行環境や、JavaScript プログラミングの
