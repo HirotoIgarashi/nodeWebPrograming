@@ -3,3 +3,5 @@ node_modules/
 
 # package-lock.jsonは不要
 package-lock.json
+add.cjs
+mainAdd.cjs
