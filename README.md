@@ -4,7 +4,7 @@
 
 Node.jsはオープンソースのJavaScript実行環境です。
 
-Node.jsの特徴とそれまでの技術との違い、および ECMAScript標準、Web標準との関係について説明します。また、Node.jsの実行環境や、JavaScriptプログラミングの基礎知識についても触れます。
+Node.jsの特徴とそれまでの技術との違い、およびECMAScript標準、Web標準との関係について説明します。また、Node.jsの実行環境や、JavaScriptプログラミングの基礎知識についても触れます。
 
 ### 1.1 Node.jsの特徴
 
