@@ -4,7 +4,7 @@
 
 Node.jsはオープンソースのJavaScript実行環境です。
 
-Node.jsの特徴とそれまでの技術との違い、およびECMAScript標準、Web標準との関係について説明します。また、Node.jsの実行環境や、JavaScriptプログラミングの基礎知識についても触れます。
+Node.jsの特徴、およびECMAScript標準、Web標準との関係について説明します。また、Node.jsの実行環境や、JavaScriptプログラミングの基礎知識についても触れます。
 
 ### 1.1 Node.jsの特徴
 
@@ -31,10 +31,6 @@ graph TD;
     B[[モジュールB]]--エクスポート-->e(( ))--インポート-->C;
 ```
 
-#### 1.1.2 ESモジュール
-
-
-
 #### 1.1.3 CommonJSモジュール
 
 CommonJSモジュールは、モジュールレベルのスコープでNode.jsが自動的に割り当てるmoduleという変数のexportsプロパティ(module.exports)を通して、外部に関数や変数を公開します。一方、外部のモジュールをロードする際には同じくモジュールスコープで割 り当てられるrequire()という関数を使います。
@@ -50,6 +46,52 @@ module.exports.add = (a, b) => a + b;
 ```javascript
 const math = require('./add.cjs')
 math.add(1, 2);
+```
+
+#### 1.1.2 ESモジュール
+
+##### 名前付きエクスポート
+
+```javascript
+// 名前付きエクスポート
+export function add(a, b) {
+  return a + b;
+}
+export const subtract = (a, b) => a - b;
+```
+
+##### 宣言済み変数をそのままの名前で名前付きエクスポート
+
+```javascript
+const multiply = (a, b) => a * b;
+export { multiply };
+```
+
+##### デフォルトエクスポート
+
+```javascript
+export default class Math {
+  constructor(value) {
+    this.value = value;
+  }
+  add(value) {
+    return new Math(this.value + value);
+  }
+  substract(value) {
+    return new Math(this.value - value);
+  }
+}
+```
+
+##### インポートするときのコーディング
+
+```javascript
+import Math, { add, subtract, multiply } from './esm-math.mjs';
+import * as math from './esm-math.mjs';
+
+console.log('Math === math.default', Math === math.default);
+console.log('add === math.add', add === math.add);
+console.log('subtract === math.subtract', subtract === math.subtract);
 ```
 
 ### 1.2 Node.jsとECMAScript標準、Web標準
