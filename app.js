@@ -11,7 +11,7 @@ const app = express();
 
 const todos = [
   { id: 1, title: 'ネーム', completed: false },
-  { id: 2, title: '下書き', completed: true }
+  { id: 2, title: '下書き', completed: true },
 ];
 
 // 待ち受けるポートを3000にする
@@ -33,10 +33,11 @@ app.get('/api/todos', (req, res) => {
     todo => todo.completed === completed
   ));
 });
-app.get('/', (req, res) => res.send("Hello, Universe!"))
+app.get('/', (_req, res) => res.send("Hello, Universe!"))
   .listen(
     port, () => {
-      console.log(
-        `The Express.js server has started and is listening on port number:` + ` ${port}`);
+      return console.log(
+        `The Express.js server has started and is listening on port number:` + ` ${port}`
+      )
     }
   );
